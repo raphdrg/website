@@ -49,9 +49,6 @@ const Analysis = () => {
               </p>
               <div className="flex items-center space-x-4 mt-4">
                 <Badge variant="secondary" className="text-sm">
-                  22 Students Enrolled
-                </Badge>
-                <Badge variant="secondary" className="text-sm">
                   Winter 2024
                 </Badge>
               </div>
