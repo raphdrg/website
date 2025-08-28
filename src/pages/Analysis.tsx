@@ -64,28 +64,6 @@ const Analysis = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-8">
-            {/* Upload Section */}
-            <Card className="bg-gradient-to-br from-surface-elevated to-surface border-border/50">
-              <CardHeader>
-                <CardTitle className="flex items-center text-text-primary">
-                  <Upload className="h-5 w-5 mr-2 text-primary" />
-                  Upload Course Material
-                </CardTitle>
-                <CardDescription>
-                  Add new lecture notes, problem sets, or mathematical proofs
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="border-2 border-dashed border-border rounded-lg p-8 text-center hover:border-primary/50 transition-colors">
-                  <Upload className="h-12 w-12 text-text-secondary mx-auto mb-4" />
-                  <p className="text-text-secondary mb-2">Drag and drop files here, or click to browse</p>
-                  <Button variant="outline" className="bg-surface-elevated hover:bg-accent border-border/70">
-                    Choose Files
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-
             {/* Course Materials */}
             <Card className="bg-gradient-to-br from-surface-elevated to-surface border-border/50">
               <CardHeader>

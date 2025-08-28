@@ -42,16 +42,12 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center space-y-6">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-              Welcome to Your Course Portal
+              Welcome to Raphaël Drag's Website
             </h1>
             <p className="text-xl md:text-2xl text-primary-foreground/90 max-w-3xl mx-auto">
-              Access all your course materials, assignments, and resources in one organized platform
+              Access course materials, lecture notes, and academic resources
             </p>
             <div className="flex items-center justify-center space-x-4 pt-4">
-              <Badge variant="secondary" className="text-base px-4 py-2">
-                <Users className="h-4 w-4 mr-2" />
-                81 Active Students
-              </Badge>
               <Badge variant="secondary" className="text-base px-4 py-2">
                 <FileText className="h-4 w-4 mr-2" />
                 45 Course Materials
@@ -70,7 +66,7 @@ const Home = () => {
               <div className="flex items-center justify-between mb-6">
                 <h2 className="text-2xl font-semibold text-text-primary flex items-center">
                   <BookOpen className="h-6 w-6 mr-2 text-primary" />
-                  Your Courses
+                  Available Courses
                 </h2>
                 <Button variant="outline" size="sm">
                   View All
@@ -89,23 +85,18 @@ const Home = () => {
                 <TrendingUp className="h-6 w-6 mr-2 text-primary" />
                 Quick Overview
               </h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <Card className="bg-gradient-to-br from-surface-elevated to-surface border-border/50">
                   <CardContent className="p-6 text-center">
                     <div className="text-3xl font-bold text-primary mb-2">3</div>
-                    <p className="text-text-secondary">Active Courses</p>
+                    <p className="text-text-secondary">Available Courses</p>
                   </CardContent>
                 </Card>
-                <Card className="bg-gradient-to-br from-surface-elevated to-surface border-border/50">
+            {/* Recent Activity */}
+            <Card className="bg-gradient-to-br from-surface-elevated to-surface border-border/50">
                   <CardContent className="p-6 text-center">
                     <div className="text-3xl font-bold text-primary mb-2">45</div>
                     <p className="text-text-secondary">Total Materials</p>
-                  </CardContent>
-                </Card>
-                <Card className="bg-gradient-to-br from-surface-elevated to-surface border-border/50">
-                  <CardContent className="p-6 text-center">
-                    <div className="text-3xl font-bold text-primary mb-2">81</div>
-                    <p className="text-text-secondary">Total Students</p>
                   </CardContent>
                 </Card>
               </div>
@@ -114,7 +105,6 @@ const Home = () => {
 
           {/* Sidebar */}
           <div className="space-y-6">
-            {/* Recent Activity */}
             <Card className="bg-gradient-to-br from-surface-elevated to-surface border-border/50">
               <CardHeader>
                 <CardTitle className="flex items-center text-text-primary">
@@ -135,26 +125,22 @@ const Home = () => {
               </CardContent>
             </Card>
 
-            {/* Quick Actions */}
+            {/* Quick Links */}
             <Card className="bg-gradient-to-br from-surface-elevated to-surface border-border/50">
               <CardHeader>
                 <CardTitle className="flex items-center text-text-primary">
                   <Calendar className="h-5 w-5 mr-2 text-primary" />
-                  Quick Actions
+                  Quick Links
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
                 <Button variant="outline" className="w-full justify-start bg-surface-elevated hover:bg-accent border-border/70">
+                  <BookOpen className="h-4 w-4 mr-2" />
+                  Browse All Materials
+                </Button>
+                <Button variant="outline" className="w-full justify-start bg-surface-elevated hover:bg-accent border-border/70">
                   <FileText className="h-4 w-4 mr-2" />
-                  Upload New Material
-                </Button>
-                <Button variant="outline" className="w-full justify-start bg-surface-elevated hover:bg-accent border-border/70">
-                  <Bell className="h-4 w-4 mr-2" />
-                  Send Announcement
-                </Button>
-                <Button variant="outline" className="w-full justify-start bg-surface-elevated hover:bg-accent border-border/70">
-                  <Users className="h-4 w-4 mr-2" />
-                  Manage Students
+                  Recent Documents
                 </Button>
               </CardContent>
             </Card>

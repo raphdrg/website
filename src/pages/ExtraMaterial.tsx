@@ -97,36 +97,14 @@ const ExtraMaterial = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-8">
-            {/* Upload Section */}
-            <Card className="bg-gradient-to-br from-surface-elevated to-surface border-border/50">
-              <CardHeader>
-                <CardTitle className="flex items-center text-text-primary">
-                  <Upload className="h-5 w-5 mr-2 text-primary" />
-                  Upload Additional Material
-                </CardTitle>
-                <CardDescription>
-                  Add study guides, reference materials, or external resources
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="border-2 border-dashed border-border rounded-lg p-8 text-center hover:border-primary/50 transition-colors">
-                  <Upload className="h-12 w-12 text-text-secondary mx-auto mb-4" />
-                  <p className="text-text-secondary mb-2">Drag and drop files here, or click to browse</p>
-                  <Button variant="outline" className="bg-surface-elevated hover:bg-accent border-border/70">
-                    Choose Files
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-
             {/* Extra Materials */}
             <Card className="bg-gradient-to-br from-surface-elevated to-surface border-border/50">
               <CardHeader>
-                <div className="flex items-center justify-between">
-                  <CardTitle className="flex items-center text-text-primary">
-                    <FileText className="h-5 w-5 mr-2 text-primary" />
-                    Supplementary Materials
-                  </CardTitle>
+              <div className="flex items-center justify-between">
+                <CardTitle className="flex items-center text-text-primary">
+                  <FileText className="h-5 w-5 mr-2 text-primary" />
+                  Available Materials
+                </CardTitle>
                   <Button variant="outline" size="sm" className="bg-surface-elevated hover:bg-accent border-border/70">
                     Filter by Category
                   </Button>
@@ -234,16 +212,12 @@ const ExtraMaterial = () => {
               </CardHeader>
               <CardContent className="space-y-3">
                 <Button variant="outline" className="w-full justify-start bg-surface-elevated hover:bg-accent border-border/70">
-                  <Upload className="h-4 w-4 mr-2" />
-                  Upload Study Guide
+                  <FileText className="h-4 w-4 mr-2" />
+                  Browse by Category
                 </Button>
                 <Button variant="outline" className="w-full justify-start bg-surface-elevated hover:bg-accent border-border/70">
                   <ExternalLink className="h-4 w-4 mr-2" />
-                  Add External Link
-                </Button>
-                <Button variant="outline" className="w-full justify-start bg-surface-elevated hover:bg-accent border-border/70">
-                  <FileText className="h-4 w-4 mr-2" />
-                  Create Resource List
+                  External Resources
                 </Button>
               </CardContent>
             </Card>

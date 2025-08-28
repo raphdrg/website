@@ -18,7 +18,7 @@ export const Navigation = () => {
           <div className="flex items-center space-x-8">
             <div className="flex items-center space-x-2">
               <Library className="h-6 w-6 text-primary" />
-              <span className="text-xl font-semibold text-text-primary">Course Portal</span>
+              <span className="text-xl font-semibold text-text-primary">Raphaël Drag's Website</span>
             </div>
             
             <div className="hidden md:flex items-center space-x-1">
